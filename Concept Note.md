@@ -1,68 +1,62 @@
-**Discovery of Therapeutic Biomarkers and their Potential Inhibitors for Liver Cancer Therapy Using Bioinformatics Approaches**
+### Discovery of Therapeutic Biomarkers and their Potential Inhibitors for Liver Cancer Therapy Using Bioinformatics Approaches
 
- 
+## Project Proposal by Team CancerCodes Crackers
 
-**Project Proposal by Team CancerCodes Crackers**
+## Introduction
 
- 
+The proposed research aims to identify therapeutic biomarkers from liver cancer samples in Black or African American populations using data from The Cancer Genome Atlas (TCGA). This study will employ differential expression analysis and gene functional enrichment analysis through R Studio, followed by the identification of potential inhibitors or activators derived from phytocompounds, specifically from _Calotropis procera_ (alternatively, from existing drugs using FDA-approved drug repurposing approach). The project will also involve molecular docking, ADMET profiling, (and possibly molecular dynamics simulations).
 
-**Introduction**
+## Objectives
 
-The proposed research aims to identify therapeutic biomarkers from liver cancer samples in Black or African American populations using data from The Cancer Genome Atlas (TCGA). This study will employ differential expression analysis and gene functional enrichment analysis through R Studio, followed by the identification of potential inhibitors or activators derived from phytocompounds, specifically from _Calotropis procera_ (alternatively, from existing drugs using FDA-approved drug repurposing appraoch). The project will also involve molecular docking, ADMET profiling, (and possibly molecular dynamics simulations).
+Identify therapeutic biomarkers in liver cancer samples using TCGA data.
 
- 
 
-**Objectives**
+Perform differential expression analysis to identify upregulated and downregulated genes.
 
-<!--[if !supportLists]-->·       <!--[endif]-->Identify therapeutic biomarkers in liver cancer samples using TCGA data.
 
-<!--[if !supportLists]-->·       <!--[endif]-->Perform differential expression analysis to identify upregulated and downregulated genes.
+Conduct gene functional enrichment analysis to understand the biological pathways involved.
 
-<!--[if !supportLists]-->·       <!--[endif]-->Conduct gene functional enrichment analysis to understand the biological pathways involved.
 
-<!--[if !supportLists]-->·       <!--[endif]-->Identify potential phytocompounds that can act as inhibitors or activators of the identified genes.
+Identify potential phytocompounds that can act as inhibitors or activators of the identified genes.
 
-<!--[if !supportLists]-->·       <!--[endif]-->Perform molecular docking studies to evaluate the interaction between phytocompounds and target proteins.
 
-<!--[if !supportLists]-->·       <!--[endif]-->Conduct ADMET profiling of the top 10 compounds based on docking results.
+Perform molecular docking studies to evaluate the interaction between phytocompounds and target proteins.
 
-<!--[if !supportLists]-->·       <!--[endif]-->Run molecular dynamics simulations to assess the stability and activity of the protein-ligand complexes.
 
- 
+Conduct ADMET profiling of the top 10 compounds based on docking results.
 
-**Materials and Methods**
 
- 
+Run molecular dynamics simulations to assess the stability and activity of the protein-ligand complexes.
 
-**Data Collection**
 
-<!--[if !supportLists]-->·       <!--[endif]-->Source: TCGA liver cancer dataset (LIHC).
+## Materials and Methods
 
-<!--[if !supportLists]-->·       <!--[endif]-->Population: Focus on Live cancer samples generally  
+ **Data Collection**
 
-** **
+Source: TCGA liver cancer dataset (LIHC).
+
+Population: Focus on Live cancer samples generally  
+
 
 **Differential Expression Analysis**
 
-<!--[if !supportLists]-->·       <!--[endif]-->Tool: R Studio with packages such as \`DESeq2\` or \`edgeR\`.
+Tool: R Studio with packages such as \`DESeq2\` or \`edgeR\`.
 
-<!--[if !supportLists]-->·       <!--[endif]-->Process:
+Process:
 
-<!--[if !supportLists]-->i.                 <!--[endif]-->Normalize data.
+Normalize data.
 
-<!--[if !supportLists]-->ii.               <!--[endif]-->Identify differentially expressed genes (DEGs) with a significance threshold (e.g., FDR < 0.05).
+Identify differentially expressed genes (DEGs) with a significance threshold (e.g., FDR < 0.05).
 
  
-
 **Gene Functional Enrichment Analysis**
 
 Tool: R packages like \`clusterProfiler\` or \`GOstats\`.
 
 Process:
 
-<!--[if !supportLists]-->i.                 <!--[endif]-->Analyze DEGs for enrichment in biological pathways using Gene Ontology (GO) and KEGG databases.
+Analyze DEGs for enrichment in biological pathways using Gene Ontology (GO) and KEGG databases.
 
- 
 
 **Identification of Phytocompounds**
 
@@ -70,7 +64,6 @@ Source: Literature review for reported compounds from _Calotropis procera_.
 
 Analysis: Use databases like IMPPAT, Dr. Duke and/or PubChem to gather information on bioactive compounds.
 
- 
 
 **Molecular Docking**
 
@@ -78,21 +71,17 @@ Software: AutoDock Vina or similar tools.
 
 Process:
 
-<!--[if !supportLists]-->i.                 <!--[endif]-->Prepare protein structures from PDB files.
+Prepare protein structures from PDB files.
 
-<!--[if !supportLists]-->ii.               <!--[endif]-->Dock phytocompounds against target proteins derived from DEGs.
+Dock phytocompounds against target proteins derived from DEGs.
 
- 
 
 **ADMET Profiling**
 
 Software: Use online tools like SwissADME or ADMETlab.
 
-Process:
+Process: Evaluate the pharmacokinetic properties of the top 10 compounds based on docking scores.
 
-Evaluate the pharmacokinetic properties of the top 10 compounds based on docking scores.
-
- 
 
 **Molecular Dynamics Simulation (Possible technique addition)**
 
@@ -102,11 +91,9 @@ Process:
 
 Set up simulations for the best protein-ligand complexes in a physiological environment.
 
- Analyze stability through root mean square deviation (RMSD) and root mean square fluctuation (RMSF).
+Analyze stability through root mean square deviation (RMSD) and root mean square fluctuation (RMSF).
 
- 
-
-**Timeline**
+## Timeline
 
 |                                                                                  |                                                                                            |                |
 | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | -------------- |
@@ -120,9 +107,7 @@ Set up simulations for the best protein-ligand complexes in a physiological envi
 |  <!--[if !supportLists]-->7.     <!--[endif]-->Molecular Dynamics Simulation     |  Simulate protein-ligand interactions in a physiological environment to assess stability.  |  Week 4        |
 |  <!--[if !supportLists]-->8.     <!--[endif]-->Data Analysis & Reporting         |  Compile findings, analyze results, and prepare a final report or presentation.            |  Week 4        |
 
- 
-
-**Suggested Control Drugs**
+## Suggested Control Drugs
 
 1\. Sorafenib
 
@@ -130,25 +115,17 @@ Set up simulations for the best protein-ligand complexes in a physiological envi
 
 3\. Regorafenib
 
- 
-
 These drugs are commonly used in hepatocellular carcinoma treatment and can serve as benchmarks for evaluating the efficacy of identified phytocompounds.
 
- 
-
-**Novelty and Worth Exploring**
+## Novelty and Worth Exploring
 
 This project concept is novel as it focuses specifically on therapeutic biomarkers in liver cancer within a racial context, addressing disparities in cancer treatment outcomes. The integration of phytocompound screening adds a unique dimension to traditional therapeutic approaches, potentially leading to innovative treatment options tailored for underrepresented populations.
 
- 
-
-**Conclusion**
+## Conclusion
 
 The outlined project aims to leverage existing genomic data while incorporating novel methodologies to explore therapeutic avenues in liver cancer patients. By combining computational biology with traditional pharmacology, this research has the potential to contribute significantly to personalized medicine and health equity in oncology.
 
- 
-
-**References**
+## References
 
 \[1] https\://www\.ncbi.nlm.nih.gov/pmc/articles/PMC10216530/
 
